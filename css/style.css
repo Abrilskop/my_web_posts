@@ -1,0 +1,37 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+.bg-dark-custom {
+    background-color: #1a1a2e !important;
+}
+.text-primary {
+    color: #0f3460 !important;
+}
+.btn-primary {
+    background-color: #e94560;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #d1304a;
+}
+/* Efecto de las tarjetas (Posts) */
+.post-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.hero-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 60px 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 40px;
+}
