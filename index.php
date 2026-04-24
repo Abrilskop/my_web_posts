@@ -38,9 +38,16 @@ include 'includes/header.php';
                     <span class="small fw-semibold text-dark">
                         <i class="fa-solid fa-circle-user me-1 text-danger"></i> <?php echo $row['autor']; ?>
                     </span>
-                    <button onclick="confirmarEliminar(<?php echo $row['idpost']; ?>)" class="btn btn-link text-danger p-0">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </button>
+                    <div>
+                        <!-- BOTÓN EDITAR -->
+                        <a href="editar_post.php?id=<?php echo $row['idpost']; ?>" class="btn btn-link text-primary p-0 me-2">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <!-- BOTÓN ELIMINAR -->
+                        <button onclick="confirmarEliminar(<?php echo $row['idpost']; ?>)" class="btn btn-link text-danger p-0">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
