@@ -1,15 +1,14 @@
-<!-- Footer -->
-    <footer class="bg-dark-custom text-white text-center py-4 mt-5 shadow-lg">
-        <div class="container">
-            <p class="mb-0 fw-light">
-                &copy; <?php echo date('Y'); ?> <span class="fw-bold text-primary">Tech</span>Posts. 
-                Proyecto de Implementación de Contenedores.
-            </p>
-            <small class="text-muted">Desarrollado con ❤️ para la clase de Redes.</small>
+<footer class="footer">
+        <div class="container text-center">
+            <h4 class="navbar-brand">HIGH<span>SPEED</span></h4>
+            <p class="text-muted small">© 2026 Admin Panel - Arquitectura de Contenedores Docker</p>
+            <div class="mt-3">
+                <i class="fa-brands fa-docker mx-2 text-secondary"></i>
+                <i class="fa-brands fa-php mx-2 text-secondary"></i>
+                <i class="fa-solid fa-database mx-2 text-secondary"></i>
+            </div>
         </div>
     </footer>
-
-    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

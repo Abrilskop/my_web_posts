@@ -1,37 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@700&display=swap');
+
+:root {
+    --primary: #e63946; /* Rojo vibrante pero elegante */
+    --dark: #1d3557;
+    --light: #f8f9fa;
+    --gray: #6c757d;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
 }
-.bg-dark-custom {
-    background-color: #1a1a2e !important;
+
+/* Navbar Minimalista */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
 }
-.text-primary {
-    color: #0f3460 !important;
+
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    color: var(--dark) !important;
 }
-.btn-primary {
-    background-color: #e94560;
-    border: none;
+
+.navbar-brand span {
+    color: var(--primary);
 }
-.btn-primary:hover {
-    background-color: #d1304a;
+
+/* Hero Section con imagen de Unsplash */
+.hero {
+    background: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), 
+                url('https://images.unsplash.com/photo-1493238507129-15510bf9a00b?auto=format&fit=crop&q=80&w=1470') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 3rem;
 }
-/* Efecto de las tarjetas (Posts) */
+
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+/* Cards Premium */
 .post-card {
     border: none;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: #fff;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
+
 .post-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
-.hero-section {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: white;
-    padding: 60px 0;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    margin-bottom: 40px;
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark);
+    transform: scale(1.05);
+}
+
+.footer {
+    padding: 4rem 0;
+    background: var(--light);
+    margin-top: 5rem;
+    border-top: 1px solid #eee;
 }

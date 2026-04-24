@@ -1,14 +1,17 @@
 <?php
-$host = 'db'; // Nombre del contenedor Docker
-$port = '5432';
+$host = 'localhost'; 
 $dbname = 'misposts_db';
 $user = 'root';
-$password = 'password123';
+$password = 'sopasinstantaneas'; // Tu contraseña correcta
+$puerto = '3307';                // Tu puerto de XAMPP
 
 try {
-    // Fíjate que dice "pgsql", esto es clave para PostgreSQL
-    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
+    // Usamos PDO con mysql para XAMPP
+    $dsn = "mysql:host=$host;port=$puerto;dbname=$dbname;charset=utf8";
+    
+    // Aquí creamos la variable $pdo que index.php y crear_post.php están buscando
     $pdo = new PDO($dsn, $user, $password,[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    
 } catch (PDOException $e) {
     die("Error de conexión a la base de datos: " . $e->getMessage());
 }
